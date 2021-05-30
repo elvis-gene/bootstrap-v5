@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Version 5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- version 5 ALPHA CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- <div class="customBackground">
+    Custom Backosund Color
+  </div> -->
+
+<!--  bg-light-->
+  <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container">
+          <a class="navbar-brand" href="#">Bootstrap</a>
+
+          <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav mr-4">
+                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#">Styles</a>
+                  <a class="nav-link" href="#">Notes</a>
+              </div>
+
+              <form class="mr-auto">
+                  <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Search"/>
+                      <button class="btn btn-outline-success">Search</button>
+                  </div>
+              </form>
+
+              <p class="nav navbar-text pr-4">
+                  Notifications &nbsp;
+                  <span class="badge bg-success rounded-pill mt-1">13</span>
+              </p>
+
+          </div>
+
+      </div>
+  </nav>
+
+  <div class="container mt-4">
+
+    <div>
+      <h2>List Groups</h2>
+
+      <div class="list-group pb-4">
+        <a href="#" class="list-group-item list-group-item-action">Build a startup</a>
+        <a href="#" class="list-group-item list-group-item-action">Doing what I love</a>
+        <a href="#" class="list-group-item list-group-item-action">Aritificial intelligence</a>
+      </div>
+
+      <ul class="list-group pb-4">
+        <li class="list-group-item list-group-item-action">Mastering Bootstrap</li>
+        <li class="list-group-item list-group-item-action">Building MVPs</li>
+        <li class="list-group-item list-group-item-action">Doing what I love</li>
+        <li class="list-group-item list-group-item-action">Aritificial intelligence</li>
+      </ul>
+
+      <ul class="list-group pb-4 list-group-flush">
+        <li class="list-group-item list-group-item-action">Mastering Bootstrap</li>
+        <li class="list-group-item list-group-item-action">Building MVPs</li>
+        <li class="list-group-item list-group-item-action">Doing what I love</li>
+        <li class="list-group-item list-group-item-action">Aritificial intelligence</li>
+      </ul>
+
+      <ul class="list-group pb-4 list-group-horizontal">
+        <li class="list-group-item list-group-item-action">Mastering Bootstrap</li>
+        <li class="list-group-item list-group-item-action">Building MVPs</li>
+        <li class="list-group-item list-group-item-action">Doing what I love</li>
+        <li class="list-group-item list-group-item-action">Aritificial intelligence</li>
+      </ul>
+
+      <ol class="list-group pb-4">
+        <li class="list-group-item list-group-item-info">Mastering Bootstrap</li>
+        <li class="list-group-item list-group-item-warning">Building MVPs</li>
+        <li class="list-group-item list-group-item-danger">Doing what I love</li>
+        <li class="list-group-item list-group-item-secondary">Aritificial intelligence</li>
+      </ol>
+    </div>
+
+    <h1>Forms</h1>
+
+    <form>
+
+        <fieldset>
+            <!--      The div below was form-group in bootstrap 4-->
+            <div class="mb-4">
+                <label class="form-label">Name</label>
+                <!--        Mostly used with the read-only and disabled attributes-->
+                <input class="form-control-plaintext" placeholder="Neil Armstrong"/>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Sign up for space news</label>
+                <input class="form-control form-control-sm" type="email"/>
+                <div class="form-text">We won't give your e-mail away, but we will sell it.</div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">What do you like about space?</label>
+                <textarea class="form-control"></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Choose your favourite color</label>
+                <input type="color" class="form-control form-control-color"/>
+            </div>
+
+            <div class="mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"/>
+                    <label class="form-check-label">I like NASA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"/>
+                    <label class="form-check-label">I like SpaceX</label>
+                </div>
+            </div>
+
+            <label class="form-label">Would you like...?</label>
+            <div class="mb-4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"/>
+                    <label class="form-check-label">yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"/>
+                    <label class="form-check-label">No</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox"/>
+                    <label class="form-check-label">Given the chance</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">How much is it in dollar?</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">How much is it in CFA?</label>
+                <div class="input-group">
+                    <input class="form-control" type="text">
+                    <span class="input-group-text">CFA</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="input-group">
+                    <input class="form-control" type="text">
+                    <button class="btn btn-primary">Button</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text">Options</span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Possibility of building a successful business <span class="text-muted">(Scale from 1 → 10 - 10 most likely)</span> </label>
+                <input class="form-range" type="range" min="1" max="10">
+            </div>
+
+            <div class="mb-4 form-file">
+                <input type="file" class="form-file-input">
+                <label class="form-file-label">
+                    <span class="form-file-text">Upload Something</span>
+                    <span class="form-file-button">Browse Local</span>
+                </label>
+            </div>
+
+            <div class="alert alert-danger mb-4">
+                <h4 class="alert-heading">Attention!</h4>
+                You need to find a responsibility. <a class="alert-link">Check it out!</a>
+            </div>
+
+<!--            Jumbotron in Bootstrap 5-->
+<!--            Inside padding-->
+            <div class="bg-light p-5 rounded mb-4">
+                <div class="container">
+                    <h1 class="display-4">Limited Quantity Sale</h1>
+                    <p class="lead">
+                        Up to 50% off After promo code...
+                    </p>
+                </div>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+      <div class="card mb-4 w-50">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+              <h6 class="card-subtitle">Subtitle</h6>
+              <p class="card-text">Writing something that doesn't matter...</p>
+              <a class="card-link" href="#">link 1</a>
+              <a class="card-link" href="#">link 2</a>
+          </div>
+          <div class="card-footer">Footer</div>
+      </div>
+
+      <div class="card mb-4 w-50 border-success">
+          <img class="card-img-top" src="images/AI-Healthcare.png" ALT="AI for Healthcare">
+
+          <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <h6 class="card-subtitle">Subtitle</h6>
+              <p class="card-text">Writing something that doesn't matter...</p>
+              <a class="card-link" href="#">link 1</a>
+              <a class="card-link" href="#">link 2</a>
+          </div>
+          <div class="card-footer">Footer</div>
+      </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html> 
